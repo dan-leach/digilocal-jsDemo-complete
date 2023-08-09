@@ -1,4 +1,4 @@
-console.log('Hello World');
+console.log('Hi DigiLocal');
 
 //click me
 let btnClickMe = document.getElementById('btnClickMe');
@@ -15,6 +15,7 @@ btnClickMe.addEventListener('click', btnClickMe_click);
 
 //set title
 let title = document.getElementById('title');
+let btnSetTitle = document.getElementById('btnSetTitle');
 
 function btnSetTitle_click() {
   let newTitle = document.getElementById('inputTitle').value;
@@ -23,6 +24,7 @@ function btnSetTitle_click() {
     title.innerHTML = newTitle;
   } else {
     console.error('newTitle is blank');
+    alert('newTitle is blank!');
   }
 }
 
